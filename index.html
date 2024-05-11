@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Pessoal - Wanderson Fonteles</title>
+    <link rel="stylesheet" href="estilo.css"> <!–Aponta para o arquivo com o código css para estido da página–>
+</head>
+<body>
+    <header>
+        <h1>Portfólio Pessoal - Wanderson Fonteles</h1>
+        <nav>
+            <ul> <!–Likns que conduzem a cada área da página–>
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre"> <!–Área acionada quando o úsuário clicar no link Sobre–>
+            <h2>Sobre Mim</h2>
+            <p> Meu nome é Wanderson, tenho 33 anos de idade, sou natural de Fortaleza-CE. Atuo na área bancária a aproximadamente 10 anos, sou casado a 6 anos.
+                </p>
+        <img src="Imagens/Fortaleza.png" alt="Litoral de Fortaleza" title="Litoral de Fortaleza" width="75%" height="75%"> <!–Resgata imagem a ser exibida na página–>
+        </section>
+
+        <section id="formacao"> <!–Área acionada quando o úsuário clicar no link Formação–>
+            <h2>Formação</h2>
+            <p> Cursei Ciências Contábeis na Universidade Estadual do Vale do Acaraú na cidade de Sobral-CE concluindo o curso no ano de 2013.
+                Possuo MBA em Planejamento tributário e atualmente curso Tecnólogo em Análise e Desenvolvimento de Sistemas.
+            </p>
+            <img src="Imagens/uva.png" alt="Universidade Vale do Acaraú" title="Universidade Vale do Acaraú">
+        </section>
+
+        <section id="portfolio"> <!–Área acionada quando o úsuário clicar no link Portifólio–>
+            <h2>Portfólio</h2>
+            <p>Uma das atividades realizadas no decorrer do curso consiste em desenvolver um software que levará informações ao público visitante ou permanente de praias localizadas em municípios no Estado do Ceará prestando auxílio no planejamento de suas atividades e rotinas que envolvem aquele ambiente.
+            Para uma visão completa da plataforma acessar o arquivo com o trabalho completo pelo link abaixo:
+            </p>
+        <a href="plataforma.pdf">Baixar arquivo</a> <!–Acessa arquivo disponibilizado para download–>
+        </section>
+
+        <section id="contato"> <!–Área acionada quando o úsuário clicar no link Contato–>
+            <h2>Contato</h2>
+            <form action="enviar.php" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+
+                <button type="submit">Enviar</button> <!–Botão para envio de mensagem–>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 - Wanderson</p>
+    </footer>
+</body>
+</html>
